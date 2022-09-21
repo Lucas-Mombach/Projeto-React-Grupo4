@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+.App-button-start {
+  background-color: #61dafb; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  font-size: calc(10px + 2vmin);
+  text-align: center;
+  text-decoration: none;
+}

@@ -5,18 +5,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <h1>Padaria Victoria</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Sistema de Gerenciamento de estoque de produtos da Padaria Victoria
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+       <button type='button' className='App-button-start'>Iniciar</button>
+       
       </header>
     </div>
   );
