@@ -76,11 +76,20 @@ export default props => {
                             <div className="btn-post" >
                                 <button type="button" onClick={
                                     function() {
-                                        listaProdutos.push([
-                                            document.getElementById("nome").value, 
-                                            document.getElementById("tipo").value, 
-                                            document.getElementById("dataDeFabricacao").value
-                                        ]);
+                                        let produto = {
+                                            nome: document.getElementById("nome").value,
+                                            tipo: document.getElementById("tipo").value,
+                                            dataDeFabricacao: document.getElementById("dataDeFabricacao").value,
+                                            dataDeValidade: document.getElementById("dataDeValidade").value,
+                                            peso: document.getElementById("peso").value,
+                                            custoDeFabricacao: document.getElementById("custoDeFabricacao").value,
+                                            precoDeVenda: document.getElementById("precoDeVenda").value,
+                                            qtdeProduzida: document.getElementById("qtdeProduzida").value,
+                                            qtdeVendida: document.getElementById("qtdeVendida").value,
+                                            funcionario: document.getElementById("funcionario").value,
+                                            lucro: document.getElementById("lucro").value
+                                        };
+                                        listaProdutos.push(produto);
                                     }
                                 }>Cadastrar</button>
                             </div>

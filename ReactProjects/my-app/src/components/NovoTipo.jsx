@@ -19,12 +19,12 @@ export default props => {
 
                             <div className="fields" >
                                 <label>Nome</label>
-                                <input type="text" id="nome"/>
+                                <input type="text" id="nomeTipo"/>
                             </div>
 
                             <div className="fields" >
                                 <label>Quantidade de Produtos</label>
-                                <input type="text" id="qtde"/>
+                                <input type="text" id="qtdeProdutos"/>
                             </div>
 
                             <div className="btn-post" >
