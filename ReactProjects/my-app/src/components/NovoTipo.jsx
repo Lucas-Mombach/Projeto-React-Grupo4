@@ -30,12 +30,13 @@ export default props => {
                             <div className="btn-post" >
                                 <button type="button" onClick={
                                     function() {
-                                        listaTipos.push(
-                                            [document.getElementById("nome").value, document.getElementById("qtde").value]
-                                        ); 
-                                        document.getElementById("nome").value = "";
-                                        document.getElementById("qtde").value = "";
-                                        console.log(listaTipos);
+                                        let tipo = {
+                                            nomeTipo: document.getElementById("nomeTipo").value,
+                                            qtdeProdutos: document.getElementById("qtdeProdutos").value,
+                                        }
+                                        listaTipos.push(tipo); 
+                                        document.getElementById("nomeTipo").value = "";
+                                        document.getElementById("qtdeProdutos").value = "";
                                     }
                                 }>Criar</button>
                             </div>

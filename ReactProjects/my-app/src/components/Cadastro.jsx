@@ -25,7 +25,22 @@ export default props => {
 
                             <div className="fields" >
                                 <label>Tipo</label>
-                                <input type="text" id="tipo"/>
+                                
+                                <select id="tipo" onFocus={
+                                    function(){
+                                        let select = document.getElementById("tipo");
+                                        
+                                        for(let i = 1; i < select.options.length; i++) {
+                                            select.remove(i);
+                                        }
+
+                                        for(let i = 0; i < listaTipos.length; i++) {
+                                            document.getElementById("tipo").innerHTML += "<option value='" + i + "'>" + listaTipos[i].nomeTipo + "</option>";
+                                        }
+                                    }
+                                }>
+                                    <option selected disabled>Selecione o tipo</option>
+                                </select>
                             </div>
                             
                             <div className="fields" >
@@ -90,6 +105,17 @@ export default props => {
                                             lucro: document.getElementById("lucro").value
                                         };
                                         listaProdutos.push(produto);
+                                        document.getElementById("nome").value = "";
+                                        document.getElementById("tipo").value = "";
+                                        document.getElementById("dataDeFabricacao").value = "";
+                                        document.getElementById("dataDeValidade").value = "";
+                                        document.getElementById("peso").value = "";
+                                        document.getElementById("custoDeFabricacao").value = "";
+                                        document.getElementById("precoDeVenda").value = "";
+                                        document.getElementById("qtdeProduzida").value = "";
+                                        document.getElementById("qtdeVendida").value = "";
+                                        document.getElementById("funcionario").value = "";
+                                        document.getElementById("lucro").value = "";
                                     }
                                 }>Cadastrar</button>
                             </div>

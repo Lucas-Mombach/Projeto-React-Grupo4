@@ -8,6 +8,8 @@ export default props => {
             <hr />
             <button onClick={
                 function() {
+                    var bodyRef = document.getElementById('table').getElementsByTagName('tbody')[0]; bodyRef.innerHTML = '';
+
                     let tbody = document.getElementById("tbody");
 
                     for (let i = 0; i < listaProdutos.length; i++) {
@@ -41,7 +43,7 @@ export default props => {
                 }
                 }>Atualizar Tabela</button>
             
-            <table border="1">
+            <table id="table" border="1">
                 <thead>
                     <th>ID</th>
                     <th>Nome</th>
