@@ -9,9 +9,9 @@ export default props => {
           <nav> 
             <ul>
               <li><a href='/'>Home</a></li>
-              <li><a href='/'>Login</a></li>
-              <li><a href='/'>Cadastros</a></li>
-              <li><a href='/'>Produtos</a></li>
+              <li><a href='/login'>Login</a></li>
+              <li><a href='/cadastro'>Produtos</a></li>
+              
             </ul>
           </nav>
           
