@@ -5,14 +5,20 @@ import { BrowserRouter } from  'react-router-dom'
 import NovoTipo from './components/NovoTipo'
 import Cadastro from './components/Cadastro'
 import Tabela from './components/Tabela'
-
-export default _ =>
-
+import Menu from './components/Menu'
+import Home from './components/Home'
+ 
+const App = props => (
     <div className="App">
-        <h1>Padaria Victoria</h1>
-
-        <NovoTipo />
-        <Cadastro />
-        <Tabela />
-
+        <h1> Padaria Victória</h1>
+        <BrowserRouter> 
+            <Menu />
+            <Home />
+            <NovoTipo/>
+            <Cadastro/>
+            <Tabela/>
+        </BrowserRouter>
     </div>
+)
+ 
+export default App

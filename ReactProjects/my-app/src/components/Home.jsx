@@ -8,7 +8,7 @@ export default props => {
     return (
         <div>
             <main>
-              <h1> Welcome </h1>
+              <h1> Bem-Vindo</h1>
             </main>
         </div>
     );
