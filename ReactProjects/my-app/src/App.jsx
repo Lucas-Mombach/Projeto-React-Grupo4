@@ -1,6 +1,7 @@
 //import './App.css'
 import ReactDOM from 'react-dom'
 import React from 'react'
+import { BrowserRouter } from  'react-router-dom'
 import NovoTipo from './components/NovoTipo'
 import Cadastro from './components/Cadastro'
 import Tabela from './components/Tabela'
