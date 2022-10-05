@@ -3,12 +3,9 @@ import React from 'react';
 import listaProdutos from '../data/mercadorias'
 
 export default props => {
-    return (
-        <div className="TabelaProdutos">
-            <hr />
-            <button onClick={
-                function() {
-                    var bodyRef = document.getElementById('table').getElementsByTagName('tbody')[0]; bodyRef.innerHTML = '';
+
+    function fillTable(){
+        var bodyRef = document.getElementById('table').getElementsByTagName('tbody')[0]; bodyRef.innerHTML = '';
 
                     let tbody = document.getElementById("tbody");
 
@@ -40,9 +37,28 @@ export default props => {
                         td_funcionario.innerText = listaProdutos[i].funcionario;
                         td_lucro.innerText = listaProdutos[i].lucro;
                     }
-                }
-                }>Atualizar Tabela</button>
+    }
+
+    return (
+        <div className="TabelaProdutos">
+            <hr />
+            <button onClick={ function() { fillTable(); } }>Atualizar Tabela</button>
             
+            <div className="Delete">
+                <input type="number" id="inputDelete" />
+                <button id="btnDelete" onClick={
+                    function() {
+                        let id = document.getElementById("inputDelete").value;
+
+                        if(id >=0 && id<listaProdutos.length) {
+                            listaProdutos.splice(id, 1);
+                        }
+                        document.getElementById("inputDelete").value="";
+                        fillTable();
+                    }
+                }>Delete</button>
+            </div>
+
             <table id="table" border="1">
                 <thead>
                     <th>ID</th>

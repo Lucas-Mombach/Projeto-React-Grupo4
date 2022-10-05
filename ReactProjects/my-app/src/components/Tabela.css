@@ -26,5 +26,23 @@
     margin-top: 25px;
     margin-bottom: 15px;
     cursor: pointer;
+    height: 50px;
+}
 
+.delete{
+    justify-content: center;
+}
+
+.Delete input{
+    width: 5%;
+    margin-right: 10px;
+    height: 35px;
+}   
+
+.Delete button {
+    background-color: #ff6347;
+    padding: 9px 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 40px;
 }
