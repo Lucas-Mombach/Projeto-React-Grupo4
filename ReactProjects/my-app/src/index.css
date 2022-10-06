@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
 body {
-    font-family: Oswald;
+    font-family: 'Sarala', sans-serif;
     background-color: #222;
     color: #fff;
     text-align: center;

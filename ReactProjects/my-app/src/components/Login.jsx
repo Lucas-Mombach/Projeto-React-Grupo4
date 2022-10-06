@@ -38,7 +38,7 @@ export default props => {
                                         document.getElementById("username").value = "";
                                         document.getElementById("password").value = "";
                                     }
-                                }>Confirmar</button>
+                                }><a href='/cadastro'>Confirmar</a></button>
                             </div>
 
                         </form>

@@ -19,8 +19,8 @@
   flex-direction: row;
 }
 .Menu li a {
-  padding: 10px;
-  margin: 10px;
+  padding: 4px;
+  margin: 4px;
   text-decoration: none;
   color: #D2DAF5;
   font-size: large;

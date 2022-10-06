@@ -1,7 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
+*{
+    font-family: 'Sarala', sans-serif;
+}
+h1{
+    font-family: 'Righteous', cursive;
+}
+
 main {
     display: flex;
     justify-content: center;
     padding: 3rem 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
 
 .card-post {
@@ -11,7 +25,7 @@ main {
 }
 
 .card-post h1{
-    font-family: Heebo;
+    
     font-weight: 800;
     text-align: center;
 
@@ -37,12 +51,9 @@ main {
 
 label {
     display: block;
-    margin-bottom: 7px;
     font-size: 1.2rem;
-
     color: #D2DAF5;
 
-    font-family: Poppins;
 }
 
 input, textarea, select {
@@ -50,9 +61,7 @@ input, textarea, select {
     border-radius: 10px;
     border: 0;
     outline: 0;
-
     font-size: 1.2rem;
-
     padding-left: 15px;
 }
 
@@ -63,7 +72,6 @@ input, select {
 textarea {
     height: 190px;
     resize: none;
-
     padding-top: 10px;
 }
 
@@ -74,16 +82,13 @@ textarea {
 }
 
 .btn-post button{
-    font-family: Heebo;
+    
     font-weight: 800;
     font-size: 1.3rem;
-
     padding: 5px 50px;
     color: #fff;
     background-color: #3DECB1;
-
     border: 0;
     border-radius: 10px;
-
     cursor: pointer;
 }
