@@ -6,10 +6,15 @@ import listaTipos from '../data/tipos'
 export default props => {
     
     return (
-        <div>
-            <main>
-              <h1> Bem-Vindo</h1>
-            </main>
-        </div>
+        <div className="Home">
+        <header>
+          <h1>Padaria Victoria</h1>
+          <p>
+            Sistema de Gerenciamento de estoque de produtos da Padaria Victoria
+          </p>
+         <button type='button'>Login</button>
+         
+        </header>
+      </div>
     );
 }
